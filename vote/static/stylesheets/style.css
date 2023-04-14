@@ -3,10 +3,11 @@
 *{
   box-sizing:border-box;
 }
+
 html,body{
   margin: 0;
   padding: 0;
-  background-color: #f1eef1;
+  background-color: #94ffed;
   height: 100vh;
   font-family: 'Open Sans';
 }
@@ -28,11 +29,11 @@ button i{
 }
 
 button.a{
-  background-color: #6ee649;
+  background-color: #b7f7a4;
 }
 
 button.b{
-  background-color: #6ee649;
+  background-color: #b7f7a4;
 }
 
 #content-container{
@@ -44,13 +45,26 @@ button.b{
   margin: 0 auto;
   display: table;
   padding: 10px;
-  max-width: 940px;
-  height: 100%;
+  /* max-width: 940px; */
+  height: 90%;
+  width: 90%;
+  background-color: white;
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px white;
+  transition: all 0.3s ease-in-out;
+}
+
+#content-container:hover{
+  box-shadow: 0px 0px 20px white;
+  transform: translate(-50%, -50%) scale(1.02);
 }
 
 #content-container-center{
   display: table-cell;
   text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  padding: 20px;
 }
 
 #content-container-center h3{
@@ -77,9 +91,10 @@ button.b{
   height: 80px;
   width: 330px;
   border: none;
-  color: white;
+  color: black;
   font-size:18px;
   font-weight: 700;
+  margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: left;
@@ -87,19 +102,19 @@ button.b{
 }
 
 #choice button.a:hover{
-  background-color: #ecee64;
+  background-color: #94ffed;
 }
 
 #choice button.b:hover{
-  background-color: #ecee64;
+  background-color: #94ffed;
 }
 
 #choice button.a:focus{
-  background-color: #ecee64;
+  background-color: #94ffed;
 }
 
 #choice button.b:focus{
-  background-color: #ecee64;
+  background-color: #94ffed;
 }
 
 #background-stats{
