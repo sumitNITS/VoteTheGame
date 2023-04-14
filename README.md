@@ -8,8 +8,8 @@ It is a voting application which is based on microservices as architecture.
 
 The working of microservices are as follows
 
-- The main application (vote) is based on flask connected to a Redis database
-- The Redis database is connected to a worker service for processing the vote
-- The worker service is connected to a Postgresql database for storing the vote result
+- The main application (Vote) is based on Flask connected to a Redis database
+- The Redis database is connected to a Worker service for processing the vote
+- The Worker service is connected to a Postgresql database for storing the vote result
 - The vote results are being showcased using the result service
 
