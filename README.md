@@ -11,5 +11,5 @@ The working of microservices are as follows
 - The main application (Vote) is based on Flask connected to a Redis database
 - The Redis database is connected to a Worker service for processing the vote
 - The Worker service is connected to a Postgresql database for storing the vote result
-- The vote results are being showcased using the result service
+- The vote results are being showcased using the result app
 
