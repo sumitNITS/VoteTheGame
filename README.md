@@ -2,7 +2,7 @@
 
 It is a voting application which is based on microservices as architecture.
 
-![voteapp-vote](https://user-images.githubusercontent.com/37767537/232127010-f1bc4b69-7c55-46bd-9c5b-4a4f99d8ca68.png)
+![voteapp-vote](https://user-images.githubusercontent.com/37767537/232232535-f0495bca-4dde-4720-b1ae-345142040bbe.png)
 
 ### About this app
 
