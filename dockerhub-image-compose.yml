@@ -1,0 +1,55 @@
+version: "3"
+
+services:
+  voteapp:
+    image: sumit0058/votethegame:voteapp
+    depends_on:
+      - rediscache
+    ports:
+      - "8000:80"
+    networks:
+      - frontend
+      - backend
+
+  resultapp:
+    image: sumit0058/votethegame:resultapp
+    depends_on:
+      - maindb
+    ports:
+      - "8001:80"
+    networks:
+      - frontend
+      - backend
+
+  workerservice:
+    image: sumit0058/votethegame:workerservice
+    depends_on:
+      - rediscache
+      - maindb
+    networks:
+      - backend
+
+  rediscache:
+    image: redis:alpine
+    container_name: redis
+    ports: ["6379"]
+    networks:
+      - backend
+
+  maindb:
+    image: postgres:9.4
+    container_name: db
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    volumes:
+      - "maindb-data:/var/lib/postgresql/data"
+    networks:
+      - backend
+
+volumes:
+  maindb-data:
+
+networks:
+  frontend:
+  backend:
