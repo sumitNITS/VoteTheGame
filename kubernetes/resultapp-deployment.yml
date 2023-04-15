@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: resultapp
+  name: resultapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: resultapp
+  template:
+    metadata:
+      labels:
+        app: resultapp
+    spec:
+      containers:
+      - image: sumit0058/votethegame:resultapp
+        name: resultapp
+        ports:
+        - containerPort: 80
+          name: resultapp

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: workerservice
+  name: workerservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: workerservice
+  template:
+    metadata:
+      labels:
+        app: workerservice
+    spec:
+      containers:
+      - image: sumit0058/votethegame:workerservice
+        name: workerservice

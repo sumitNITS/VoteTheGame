@@ -35,3 +35,22 @@ Now access the Vote application using "localhost":8000 or "ip-of-machine":8000 �
 And access the Result application using "localhost":8001 or "ip-of-machine":8001 🚀
 
 ![voteapp-result-1](https://user-images.githubusercontent.com/37767537/232247328-2e4d05f5-6774-4b58-8b6c-010b6d6ee2dc.png)
+
+### Instructions to run this project in local Kubernetes minikube 
+
+- Start minikube 
+- cd to VoteTheGame
+- Run the below commands
+```bash
+kubectl apply -f kubernetes/
+```
+```bash
+kubectl port-forward service/voteapp 5000
+```
+```bash
+kubectl port-forward service/resultapp 5001
+```
+
+Now access the Vote application using "localhost":5000 or "ip-of-machine":5000 🚀 </br>
+And access the Result application using "localhost":5001 or "ip-of-machine":5001 🚀
+
