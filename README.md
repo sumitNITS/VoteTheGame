@@ -17,6 +17,7 @@ The working of microservices are as follows
 
 ### Instructions to run this project using Docker Compose
 
+- Clone this repository
 - cd to VoteTheGame
 - Run the docker-compose file using the command 
 ```bash
