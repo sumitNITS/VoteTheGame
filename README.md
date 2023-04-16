@@ -57,5 +57,8 @@ kubectl port-forward service/voteapp 5000
 kubectl port-forward service/resultapp 5001
 ```
 
+![kubernetes-status](https://user-images.githubusercontent.com/37767537/232277287-f2e29b5d-5f16-4fde-ae8c-08e6cb4fe174.png)
+
+
 Now access the Vote application using "localhost":5000 or "ip-of-machine":5000 🚀 </br>
 And access the Result application using "localhost":5001 or "ip-of-machine":5001 🚀
