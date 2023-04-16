@@ -23,6 +23,9 @@ The working of microservices are as follows
 ```bash
 docker-compose up -d
 ```
+
+![application containers](https://user-images.githubusercontent.com/37767537/232276493-0e85b9d1-7a05-4399-9380-19d578f09cea.png)
+
 Now access the Vote application using "localhost":5000 or "ip-of-machine":5000 🚀 </br>
 And access the Result application using "localhost":5001 or "ip-of-machine":5001 🚀
 
@@ -31,10 +34,13 @@ OR
 ```bash
 docker-compose -f dockerhub-image-compose.yml up -d
 ```
+
+![application containers-1](https://user-images.githubusercontent.com/37767537/232276185-f725968d-705e-4b31-9dff-40e2f79d33d6.png)
+
 Now access the Vote application using "localhost":8000 or "ip-of-machine":8000 🚀 </br>
 And access the Result application using "localhost":8001 or "ip-of-machine":8001 🚀
 
-![voteapp-result-1](https://user-images.githubusercontent.com/37767537/232247328-2e4d05f5-6774-4b58-8b6c-010b6d6ee2dc.png)
+![voteapp-result-1](https://user-images.githubusercontent.com/37767537/232276221-a5f77451-60c3-4e9f-8451-8a5cced43b24.png)
 
 ### Instructions to run this project in local Kubernetes minikube 
 
@@ -53,4 +59,11 @@ kubectl port-forward service/resultapp 5001
 
 Now access the Vote application using "localhost":5000 or "ip-of-machine":5000 🚀 </br>
 And access the Result application using "localhost":5001 or "ip-of-machine":5001 🚀
+
+
+
+
+
+
+
 
