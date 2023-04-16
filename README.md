@@ -1,5 +1,7 @@
 ## VoteTheGame
 
+![Cricket-vs-Soccer](https://user-images.githubusercontent.com/37767537/232277919-bd2644f9-422e-4be6-8ffc-c92155e33c95.jpg)
+
 It is a voting application which is based on microservices as architecture.
 
 ![voteapp-vote](https://user-images.githubusercontent.com/37767537/232232535-f0495bca-4dde-4720-b1ae-345142040bbe.png)
