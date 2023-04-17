@@ -15,3 +15,4 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
         repository: sumit0058/votethegame
         readme-filepath: .
+        enable-url-completion: true
