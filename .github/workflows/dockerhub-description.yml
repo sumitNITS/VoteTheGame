@@ -23,6 +23,5 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
         short-description: ${{ github.event.repository.description }}
-        repository: 
-        -  sumit0058/votethegame
-        -  sumit0058/testthegame
+        repository: sumit0058/votethegame
+        repository: sumit0058/testthegame
