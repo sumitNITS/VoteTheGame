@@ -7,6 +7,7 @@ on:
 jobs:
   dockerHubDescription:
     runs-on: ubuntu-latest
+    
     steps:
     - name: Checkout the Repository
       uses: actions/checkout@v3  
@@ -22,5 +23,4 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
-        short-description: ${{ github.event.repository.description }}
         repository: sumit0058/votethegame
