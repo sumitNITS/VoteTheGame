@@ -19,7 +19,7 @@ The working of microservices are as follows
 
 ### Instructions to run this project using Docker Compose
 
-- Clone this repository
+- [Clone this repository](https://github.com/sumitNITS/VoteTheGame.git)
 - cd to VoteTheGame
 - Run the docker-compose file using the command 
 ```bash
@@ -46,6 +46,7 @@ And access the Result application using "localhost":8001 or "ip-of-machine":8001
 
 ### Instructions to run this project in local Kubernetes minikube 
 
+- [Clone this repository](https://github.com/sumitNITS/VoteTheGame.git)
 - Start minikube 
 - cd to VoteTheGame
 - Run the below commands
