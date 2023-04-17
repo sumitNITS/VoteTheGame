@@ -1,0 +1,21 @@
+name: Update Docker Hub Description & README
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - .github/workflows/dockerhub-description.yml
+
+jobs:
+  dockerHubDescription:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Docker Hub Description & README
+      uses: peter-evans/dockerhub-description@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+        repository: sumit0058/votethegame
+        short-description: ${{ github.event.repository.description }}
+        readme-filepath: ./README.md
