@@ -39,8 +39,8 @@ docker-compose -f dockerhub-image-compose.yml up -d
 
 ![application containers-1](https://user-images.githubusercontent.com/37767537/232276185-f725968d-705e-4b31-9dff-40e2f79d33d6.png)
 
-Now access the Vote application using "localhost":8000 or "ip-of-machine":5000 🚀 </br>
-And access the Result application using "localhost":8001 or "ip-of-machine":5001 🚀
+Now access the Vote application using "localhost":5000 or "ip-of-machine":5000 🚀 </br>
+And access the Result application using "localhost":5001 or "ip-of-machine":5001 🚀
 
 ![voteapp-result-1](https://user-images.githubusercontent.com/37767537/232276221-a5f77451-60c3-4e9f-8451-8a5cced43b24.png)
 
